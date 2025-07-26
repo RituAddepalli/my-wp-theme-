@@ -1,0 +1,76 @@
+/*
+Theme Name:  mytheme-new
+Theme URI: http://example.com
+Author: Ritu
+Author URI: http://example.com
+Description: A custom responsive WordPress blog theme with dark/light mode.
+Version: 1.0
+License: GPL2
+Text Domain: mytheme
+*/
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #222;
+}
+
+header, footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+article {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button#toggle-mode {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark header, body.dark footer {
+  background: #1f1f1f;
+}
+
+body.dark nav a {
+  color: #9fdcff;
+}
+
+body.dark button#toggle-mode {
+  border-color: #9fdcff;
+}
